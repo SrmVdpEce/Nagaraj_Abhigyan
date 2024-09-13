@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abhigyan 2k23</title>
+
+  <link rel="icon" type="image/x-icon" href="images/favicon.jpg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+  <section id="header">
+    <img src="images/srmlogobg.png" alt="SRM VDP logo" id="logo">
+    <div>
+      <ul id="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="event.html" class="activation">Event List</a></li>
+        <li><a href="previous.html">Previous Edition</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <a href="#" id="close"><i class="fa-sharp fa-solid fa-xmark"></i></a>
+      </ul>
+    </div>
+    <div id="mobile">
+      <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+  </section>
+  <div class="inner-event">
+    <p class="innerevcont">
+      CONVO 'N' CLASH
+
+    </p>
+    <div class="inner-poster">
+      <img src="images/convo.jpg" alt="" class="inner-img">
+    </div>
+    <div class="inner-cont">
+      <p class="innercont-p">
+        🗣 Two Verbalizing Rounds:
+
+      </p>
+      <p class="innercont-p">
+        1. Group Discussion- A collaborative conversation where participants share ideas, insights, and perspectives on a specific topic.
+
+      </p>
+      <p class="innercont-p">
+       2. Block and Tackle - A break from the unconventional form of debating where participants rise up to the challenge of debating with themselves on any hot topics given on the spot.
+
+      </p>
+      <p class="innercont-p">
+        👥 Team up
+
+      </p>
+      <p class="innercont-p">
+        A team of 4 will be grouped together by the Student Coordinators for the Group Discussion round🧑🏻‍🤝‍🧑🏾
+        However, the Block and Tackle round will be an individual round🧍🏻
+               
+      </p>
+      <p class="innercont-p">
+        🕒 GAME PLAY
+
+        
+      </p>
+      <p class="innercont-p">
+        Round 1: Group Discussion - Share your views and thoughts on the given topic and prove yourself the best to qualify for the next level
+      
+      </p>
+      <p class="innercont-p">
+        Round 2: Block and Tackle - Here, you need to speak both for and against the motion. You start off speaking for the motion and when the moderator says 'block' you need to reverse your motion, and 'tackle' would mean to return to your original motion.
+
+      </p>
+      <p class="innercont-p">
+        📜 RULES
+
+      </p>
+      <p class="innercont-p">
+        Round 1: Group Discussion 👩🏻‍💼🗒✒
+
+
+      </p>
+      <p class="innercont-p">
+        (1)  Each team must consist of 4 members
+ 
+
+      </p>
+      <p class="innercont-p">
+        (2)  Topics will be chosen via chits by the team on the spot to compete for the best spots
+ 
+
+      </p>
+      <p class="innercont-p">
+        (3) Preparation time will be given to them
+ 
+
+      </p>
+      <p class="innercont-p">
+        (4) Discussion time will be 10-15 minutes where the team members have to present their views and thoughts on the given topics
+
+      </p>
+      <p class="innercont-p">
+        (5) Best participant from each team advances in the next level
+
+      </p>
+      <p class="innercont-p">
+        Round 2:Block and Tackle 🎤🔮🏆
+
+
+      </p>
+      <p class="innercont-p">
+        1. Topics are assigned on the spot, no preparation time and no reference materials allowed.
+
+      </p>
+      <p class="innercont-p">
+        2. Speak when indicated; stop at the judge’s signal. The judge’s decision is final.
+
+
+      </p>
+      <p class="innercont-p">
+        3. In case of a tie, a tie breaker round will be held.
+ 
+
+      </p>
+      <p class="innercont-p">
+        4. Maintain respect; avoid insults, putting other attendees down, profanities and inappropriate jokes.
+ 
+
+      </p>
+      <p class="innercont-p">
+        inappropriate jokes.
+5. Registration fee is Rs. 50/- per person.
+
+      </p>
+      
+
+      <p class="date">Date: 19th march 2024</p>
+      
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdszV6y1veLeyT0P0dL7kAa4alc4L_I-n_leGsLhPcGUGTR6g/viewform" target="_blank"><button class="register">Register Now</button></a>
+    </div>
+  </div>
+  <script>
+    const bar = document.getElementById('bar');
+    const close = document.getElementById('close');
+    const nav = document.getElementById('navbar');
+
+    if (bar) {
+      bar.addEventListener('click', () => {
+        nav.classList.add('activation');
+      })
+    }
+
+    if (close) {
+      close.addEventListener('click', () => {
+        nav.classList.remove('activation');
+      })
+    }
+  </script>
+  <script>
+    ScrollReveal({
+      reset: true,
+      distance: '60px',
+      duration: 2500,
+      delay: 400
+    });
+
+    ScrollReveal().reveal('.innerevcont', { delay: 200, origin: 'top' });
+    ScrollReveal().reveal('.inner-poster .inner-img', { delay: 200, origin: 'left' });
+    ScrollReveal().reveal('.inner-cont', { delay: 200, origin: 'bottom' });
+  </script>
+</body>
+
+</html>

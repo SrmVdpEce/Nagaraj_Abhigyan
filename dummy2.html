@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Image Carousel</title>
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-inner img {
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .carousel-inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="carousel">
+    <div class="carousel-inner">
+      <img src="images/0E758CB6-1166-4BBA-AF57-D331F4C455FB.jpeg" alt="Image 1">
+      <img src="images/0FB0C4CA-FD0E-4FC1-A5BA-1EB9EF85455D.jpeg" alt="Image 2">
+      <img src="images/17EB7D51-BC38-43CD-A48A-193BEA7F071F.jpeg" alt="Image 3">
+    </div>
+  </div>
+</body>
+</html>
